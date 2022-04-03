@@ -1,0 +1,25 @@
+{
+  "name": "r-placer",
+  "version": "0.0.0",
+  "description": "r-placer",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "start_get-pixel-info": "npm run build && node ./dist/src/get-pixel-info.js",
+    "start_filter-pixel-data": "npm run build && node ./dist/src/filter-pixel-data.js"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.7",
+    "@types/request": "^2.48.8",
+    "canvas": "^2.9.1",
+    "cheerio": "^1.0.0-rc.10",
+    "colors": "^1.4.0",
+    "express": "^4.17.3",
+    "request": "^2.88.2",
+    "typescript": "^4.0.5"
+  }
+}
